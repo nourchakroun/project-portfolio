@@ -1,0 +1,46 @@
+
+<div class="header-container">
+  <div class="logo-container">
+    <a (click)="toggleSidebar()" href="/welcome" class="sidebar-toggle">
+      <nb-icon icon="menu-2-outline"></nb-icon>
+    </a>
+    <a class="logo" href="#" (click)="navigateHome()">Portfolio <span> </span></a>
+    
+    
+  </div>
+  
+  <form>
+    <div class="md-form active-pink active-pink-3 mb-0.5">
+      <input class="form-control" type="search" id="search3" label="Search" mdbInput>
+      <section>
+       <div class="example-button-row">
+          <button mat-stroked-button color="primary" href="/pages/tables/tree-grid">Search </button>
+        </div>
+      </section>
+     </div>
+  </form>
+  
+  <!--<nb-select [selected]="currentTheme" (selectedChange)="changeTheme($event)" status="primary">
+    <nb-option *ngFor="let theme of themes" [value]="theme.value"> {{ theme.name }}</nb-option>
+  </nb-select>-->
+</div>
+
+<div class="header-container">
+  <nb-actions size="small">
+
+    <!--<nb-action class="control-item">
+      <nb-search type="rotate-layout"></nb-search>
+    </nb-action>-->
+    <nb-action class="control-item" icon="email-outline" ></nb-action>
+    <nb-action class="control-item" icon="bell-outline"></nb-action>
+    <nb-action class="control-item" icon="bell-outline" ></nb-action>
+    
+    <nb-action class="user-action" *nbIsGranted="['view', 'user']" >
+      <nb-user [nbContextMenu]="userMenu"
+               [onlyPicture]="userPictureOnly"
+               [name]="user?.name"
+               [picture]="user?.picture">
+      </nb-user>
+    </nb-action>
+  </nb-actions>
+</div>

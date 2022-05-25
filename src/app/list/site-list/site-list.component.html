@@ -1,0 +1,38 @@
+
+<h2>SITE</h2>
+  
+
+      <div class="card my-5">
+        <div class="card-body">
+          <table class="thead-dark" class="table table-bordered table-striped">
+            <thead >
+              <tr  class="thead-dark">
+                <td><input type="text" id="name" placeholder="Company Name" title="companyname"></td>
+                <td><input type="text" id="site"  placeholder="Site Name" title="sitename"></td>
+                <td><input type="text" id="link" placeholder="Site Link" title="SiteLink"></td>
+                
+                <td><button type="submit">Add</button></td>
+                
+              </tr>
+              <tr class="thead-dark" >
+                <td  class="thead-dark"scope="col">Company Name</td>
+                <td class="thead-dark" scope="col">Site Name</td>
+                <td  class="thead-dark"scope="col">Link</td>
+                <td >Delete</td>
+                <td>Update</td>
+              </tr>
+              <tr *ngFor="let site of sites">
+                <td>{{site.namecompany}}</td>
+                <td>{{site.sitename}}</td>
+                <td>{{site.link}}</td>
+                <th><button type="submit" >Delete</button></th>
+                <th><button type="submit" >Update</button></th>
+              </tr>
+              
+
+            </thead>
+            
+          </table>
+        </div>
+        </div>
+ 

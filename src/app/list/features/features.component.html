@@ -1,0 +1,39 @@
+<h2>SITE</h2>
+  
+
+      <div class="card my-5">
+        <div class="card-body">
+          <table class="thead-dark" class="table table-bordered table-striped">
+            <thead >
+              <tr  class="thead-dark">
+                <td><input type="text" id="name" placeholder="Company Name" title="companyname"></td>
+                <td><input type="text" id="site"  placeholder="Site Name" title="sitename"></td>
+                <td><input type="text" id="link" placeholder="Site Link" title="SiteLink"></td>
+                
+                <td><button type="submit">Add</button></td>
+                
+              </tr>
+              <tr class="thead-dark" >
+                <td  class="thead-dark"scope="col">Feature</td>
+                <td class="thead-dark" scope="col">Rating</td>
+                <td  class="thead-dark"scope="col">Pondiration</td>
+                <td  class="thead-dark"scope="col">Fluctuation</td>
+                <td >Delete</td>
+                <td>Update</td>
+              </tr>
+              <tr *ngFor="let feature of features">
+                <td>{{features.namef}}</td>
+                <td>{{feature.rating}}</td>
+                <td>{{feature.pondiration}}</td>
+                <td>{{feature.fluctuation}}</td>
+                <th><button type="submit" >Delete</button></th>
+                <th><button type="submit" >Update</button></th>
+              </tr>
+              
+
+            </thead>
+            
+          </table>
+        </div>
+        </div>
+ 

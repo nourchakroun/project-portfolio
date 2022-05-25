@@ -1,0 +1,48 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="icon-bar">
+    <a title="b" class="active" href="/welcome"><i class="fa fa-home"></i></a> 
+</div>
+
+<div class="header ">
+    <h1>Sign up</h1>
+</div>
+<div class="box" >
+    
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> First Name</label>
+            <input placeholder="First name" type="text" class ="form-control" id = "firstName"
+                [(ngModel)] = "user.firstname" name = "firstname">
+        </div>
+    
+        <div class="form-group">
+            <label> Last Name</label>
+            <input placeholder="Last Name" type="text" class ="form-control" id = "lastName"[(ngModel)] = "user.lastname" name = "lastName">
+        </div>
+    
+        <div class="form-group">
+            <label> Email Id</label>
+            <input placeholder="email" type="text" class ="form-control" id = "emailId"
+                [(ngModel)] = "user.mail" name = "mail">
+        </div>
+        <div class="form-group">
+            <label> Email Id</label>
+            <input placeholder="Date of birth" type="date" class ="form-control" id = "dateofbirth"
+                [(ngModel)] = "user.dateofbirth" name = "mail">
+        </div>
+        <div class="form-group">
+            <label> Password</label>
+            <input placeholder="Password" type="password" class ="form-control" id = "password"
+                [(ngModel)] = "user.password" name = "password">
+
+        </div>
+        <div class="form-group">
+            <label> Confirm password</label>
+            <input placeholder="Confirm password" type="password" class ="form-control" id = "cpassword">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Sign up</button>
+    
+    </form>
+</div> 

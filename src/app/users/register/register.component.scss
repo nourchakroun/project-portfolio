@@ -1,0 +1,41 @@
+.bar1 {
+    background-color: #414042;
+    padding: 8px 0;
+    color: #fff;
+    min-width: 1000px;
+}
+mt5 {
+    margin-top: 5px;
+}
+.header {
+    padding: 10px;
+    text-align: center;
+    
+    color: white;
+    font-size: 10px;
+  }
+  .box {
+	
+    padding: 20px;
+	width: 100%;
+	
+    background-image: url("back.jpg");
+}
+.icon-bar {
+    width: 100%;
+    background-color: #045faa;
+    overflow: auto;
+  }
+  
+  .icon-bar a {
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 36px;
+  }
+  .active {
+    background-color: #045faa;
+  }
